@@ -20,7 +20,7 @@ function HomePage() {
 
   // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(async () => {
-    const res = await fetch('https://run.mocky.io/v3/77aad4f1-e4f3-4f2e-bc32-24b372e76c55')
+    const res = await fetch('https://run.mocky.io/')
     const postsData = await res.json()
     setPosts(postsData)
     setIsLoading(false)
